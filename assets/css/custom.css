@@ -1,0 +1,258 @@
+/* ==========================================
+   CANDRIMUK INNOVATION
+   PREMIUM CORPORATE DESIGN
+   GOLD + ELECTRIC BLUE
+========================================== */
+
+
+/* COLOR PALETTE */
+
+:root {
+    --navy: #0B1428;
+    --navy-light: #111F38;
+    --navy-card: #172640;
+
+    --gold: #C8A96B;
+    --gold-light: #E5CE9C;
+
+    --blue: #168BFF;
+    --blue-light: #45A5FF;
+
+    --white: #FFFFFF;
+    --ivory: #F4F1E9;
+    --muted: #A8B3C5;
+}
+
+
+/* GLOBAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    background: var(--navy);
+    color: var(--white);
+    letter-spacing: 0.1px;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    background: rgba(11, 20, 40, 0.97);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(200, 169, 107, 0.3);
+
+    padding: 12px 0;
+
+    transition: 0.3s;
+}
+
+
+/* BRAND SYMBOL */
+
+.brand-symbol {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+
+    color: var(--gold);
+    font-size: 23px;
+
+    background: rgba(200, 169, 107, 0.06);
+}
+
+
+/* BRAND NAME */
+
+.brand-name {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: var(--white);
+    line-height: 1.1;
+}
+
+.brand-name small {
+    display: block;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    color: var(--gold);
+
+    margin-top: 4px;
+}
+
+
+/* NAVIGATION MENU */
+
+.navbar-nav {
+    gap: 12px;
+}
+
+.navbar .nav-link {
+    font-family: 'Montserrat', sans-serif;
+
+    color: #D5DCE8;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+
+    padding: 10px 15px !important;
+
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--blue);
+}
+
+
+/* CONTACT BUTTON */
+
+.btn-contact {
+    font-family: 'Montserrat', sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        var(--blue),
+        #0870D9
+    );
+
+    color: var(--white);
+
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+
+    padding: 11px 21px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+
+    transition: 0.3s;
+}
+
+.btn-contact:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+
+    color: var(--navy);
+
+    transform: translateY(-2px);
+}
+
+
+/* GENERAL SECTION */
+
+section {
+    scroll-margin-top: 85px;
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    color: var(--white);
+}
+
+.gold-text {
+    color: var(--gold);
+}
+
+.blue-text {
+    color: var(--blue);
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #070F1E;
+
+    color: var(--white);
+
+    border-top: 1px solid rgba(200, 169, 107, 0.25);
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        padding-top: 15px;
+
+        align-items: flex-start !important;
+
+        gap: 5px;
+    }
+
+    .navbar .nav-link {
+        padding-left: 0 !important;
+    }
+
+    .btn-contact {
+        margin-top: 10px;
+    }
+
+    .brand-name {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 576px) {
+
+    .brand-symbol {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    .brand-name {
+        font-size: 20px;
+    }
+
+}
